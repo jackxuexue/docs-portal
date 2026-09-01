@@ -1,0 +1,13 @@
+# dependencies
+node_modules/
+
+# build outputs
+.vitepress/dist/
+.vitepress/cache/
+
+# logs
+*.log
+
+# os
+.DS_Store
+Thumbs.db

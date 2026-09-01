@@ -1,0 +1,12 @@
+{
+  "name": "doc-workbench",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "gray-matter": "^4.0.3"
+  }
+}

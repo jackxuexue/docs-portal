@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doc Workbench</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>Doc Workbench</h1>
+    <span id="meta" class="meta"></span>
+  </header>
+  <main>
+    <section id="tree-panel" class="panel">
+      <div class="panel-head">
+        <h2>Pages</h2>
+        <div class="btns">
+          <button id="btn-new" type="button">+ New page</button>
+          <button id="btn-refresh" type="button" title="Reload from disk">&#x21bb;</button>
+        </div>
+      </div>
+      <div id="tree" class="tree" aria-label="Documentation pages"></div>
+    </section>
+
+    <section id="editor-panel" class="panel">
+      <div class="panel-head">
+        <h2>Editor</h2>
+        <span id="editor-status" class="status">No page loaded</span>
+      </div>
+      <form id="doc-form" autocomplete="off">
+        <label>Path
+          <input id="f-path" readonly>
+        </label>
+        <div class="grid2">
+          <label>Title
+            <input id="f-title" placeholder="Page title">
+          </label>
+          <label>Description
+            <input id="f-desc" placeholder="One-line summary">
+          </label>
+        </div>
+        <label>Markdown body
+          <textarea id="f-content" spellcheck="false" placeholder="Select a page on the left…"></textarea>
+        </label>
+        <div class="btns">
+          <button type="submit" id="btn-save" disabled>Save</button>
+          <button type="button" id="btn-rename" disabled>Rename&hellip;</button>
+          <button type="button" id="btn-delete" class="danger" disabled>Delete&hellip;</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="sidebar-panel" class="panel">
+      <div class="panel-head">
+        <h2>Sidebar</h2>
+        <div class="btns">
+          <button id="btn-group-add" type="button">+ Group</button>
+          <button id="btn-side-save" type="button">Save sidebar</button>
+        </div>
+      </div>
+      <p class="hint">Drag pages to reorder or move between groups. Drag group headers to reorder sections. "collapsed" = section starts folded on the site.</p>
+      <div id="side-tree"></div>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
