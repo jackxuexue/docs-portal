@@ -210,6 +210,7 @@ const sidebar = {
 
 export default withMermaid({
   lang: 'en-US',
+  base: '/docs-portal/',
   title: 'Sofar Cloud',
   description: 'SOFARCloud OPEN API 2.0 developer documentation',
   cleanUrls: true,
@@ -249,6 +250,11 @@ export default withMermaid({
     theme: 'default'
   },
   vite: {
+    // WorkBuddy sandbox safe-delete blocks vite's bulk emptyOutDir on local
+    // builds; CI (GitHub Actions) has no such guard and keeps the default.
+    ...(process.env.CI
+      ? {}
+      : { build: { emptyOutDir: false } }),
     optimizeDeps: {
       // fastdom (a mermaid dependency) ships as a browser-global UMD file;
       // without pre-bundling, vite dev serves it raw and the browser fails
