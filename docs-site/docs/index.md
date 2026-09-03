@@ -2,11 +2,11 @@
 head:
   - - meta
     - http-equiv: refresh
-      content: '0; url=./guide/quickstart'
+      content: '0; url=./reference/api/overview/'
 ---
 
-# DevDocs Portal
+# Sofar Cloud
 
-The documentation home is the quick start guide.
+The documentation home is the OpenAPI overview.
 
-[Open the documentation](./guide/quickstart)
+[Open the documentation](./reference/api/overview/)

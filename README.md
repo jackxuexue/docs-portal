@@ -39,7 +39,9 @@
 | 产出 | 路径 |
 |---|---|
 | 调研报告 | `docs/调研报告-参考站功能清单.md` |
+| 原始参考资料 | `docs/source/`（外部源文档归档:SofarCloud OPEN API 2.0 V2.0.6 英文未发布稿 `.docx`) |
 | VitePress 文档站 | `docs-site/`(9 篇原创英文文档:guide×3 / develop×2 / reference×3 + 入口重定向) |
+| SOFARCloud API 参考 | `docs-site/docs/reference/api/`(自 docx 源文档转换:5 分类 40 页,sidebar 已登记) |
 | 文档管理台 | `admin/`(Express + gray-matter + 原生 JS 三面板,无前端构建步骤) |
 | 测试脚本 | `scripts/api-smoke.mjs`、`scripts/hot-reload-smoke.mjs`、`scripts/hmr-verify.mjs` |
 | 部署配置 | `docs-site/.github/workflows/deploy.yml`(GitHub Pages,npm ci + build + deploy-pages) |

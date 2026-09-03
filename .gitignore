@@ -11,3 +11,9 @@ node_modules/
 # os
 .DS_Store
 Thumbs.db
+
+# vitepress temp config rewrites
+docs-site/docs/.vitepress/config.mts.timestamp-*.mjs
+
+# large binary source doc (kept out of git; archived locally)
+docs/source/*.docx

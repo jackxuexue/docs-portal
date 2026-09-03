@@ -11,50 +11,196 @@ import { withMermaid } from 'vitepress-plugin-mermaid'
 const sidebar = {
   "/": [
     {
-      "text": "Guide",
-      "items": [
-        {
-          "text": "Get started",
-          "link": "/guide/quickstart"
-        },
-        {
-          "text": "Writing guide",
-          "link": "/guide/writing"
-        },
-        {
-          "text": "Diagrams & math",
-          "link": "/guide/diagrams"
-        }
-      ]
-    },
-    {
-      "text": "Workbench",
-      "items": [
-        {
-          "text": "Document workbench",
-          "link": "/develop/workbench"
-        },
-        {
-          "text": "Sidebar management",
-          "link": "/develop/sidebar"
-        }
-      ]
-    },
-    {
-      "text": "Reference",
+      "text": "OpenAPI — Overview",
       "collapsed": true,
       "items": [
         {
-          "text": "Site configuration",
-          "link": "/reference/site-config"
+          "text": "OpenAPI Overview",
+          "link": "/reference/api/overview/"
         },
         {
-          "text": "Deployment",
-          "link": "/reference/deploy"
+          "text": "Glossary",
+          "link": "/reference/api/overview/glossary"
         },
         {
-          "text": "Doc conventions",
-          "link": "/reference/conventions"
+          "text": "Common Response",
+          "link": "/reference/api/overview/common-response"
+        },
+        {
+          "text": "HTTP Error Codes",
+          "link": "/reference/api/overview/http-error-codes"
+        },
+        {
+          "text": "Rate Limiting",
+          "link": "/reference/api/overview/rate-limiting"
+        },
+        {
+          "text": "Command Callback",
+          "link": "/reference/api/overview/command-callback"
+        },
+        {
+          "text": "Server",
+          "link": "/reference/api/overview/server"
+        },
+        {
+          "text": "Release Notes",
+          "link": "/reference/api/release-notes"
+        }
+      ]
+    },
+    {
+      "text": "OpenAPI — Account",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Account API",
+          "link": "/reference/api/account/"
+        },
+        {
+          "text": "Oauth2 Authorize",
+          "link": "/reference/api/account/oauth2-authorize"
+        },
+        {
+          "text": "Oauth2 Exchange Token",
+          "link": "/reference/api/account/oauth2-exchange-token"
+        },
+        {
+          "text": "Token (for developer)",
+          "link": "/reference/api/account/token-for-developer"
+        },
+        {
+          "text": "Interface",
+          "link": "/reference/api/account/interface"
+        },
+        {
+          "text": "User Info",
+          "link": "/reference/api/account/user-info"
+        }
+      ]
+    },
+    {
+      "text": "OpenAPI — Device",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Device API",
+          "link": "/reference/api/device/"
+        },
+        {
+          "text": "Device List",
+          "link": "/reference/api/device/device-list"
+        },
+        {
+          "text": "Device Real Time Data",
+          "link": "/reference/api/device/device-real-time-data"
+        },
+        {
+          "text": "Device History Data",
+          "link": "/reference/api/device/device-history-data"
+        },
+        {
+          "text": "Device Statistics Data",
+          "link": "/reference/api/device/device-statistics-data"
+        },
+        {
+          "text": "Device Alarm",
+          "link": "/reference/api/device/device-alarm"
+        },
+        {
+          "text": "Work Mode Setting V1",
+          "link": "/reference/api/device/hybrid-inverter-work-mode-setting-v1"
+        },
+        {
+          "text": "Work Mode Setting V2",
+          "link": "/reference/api/device/hybrid-inverter-work-mode-setting-v2"
+        },
+        {
+          "text": "Work Mode Read",
+          "link": "/reference/api/device/hybrid-inverter-work-mode-read"
+        },
+        {
+          "text": "Work Mode Read Result",
+          "link": "/reference/api/device/hybrid-inverter-work-mode-read-result"
+        },
+        {
+          "text": "Power On Off",
+          "link": "/reference/api/device/power-on-off"
+        },
+        {
+          "text": "Power Control",
+          "link": "/reference/api/device/power-control"
+        },
+        {
+          "text": "Device Communication",
+          "link": "/reference/api/device/device-communication"
+        },
+        {
+          "text": "Feed-in Limit",
+          "link": "/reference/api/device/feed-in-limit"
+        }
+      ]
+    },
+    {
+      "text": "OpenAPI — Station",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Station API",
+          "link": "/reference/api/station/"
+        },
+        {
+          "text": "Station List",
+          "link": "/reference/api/station/station-list"
+        },
+        {
+          "text": "Station Device List",
+          "link": "/reference/api/station/station-device-list"
+        },
+        {
+          "text": "Station Real Time Data",
+          "link": "/reference/api/station/station-real-time-data"
+        },
+        {
+          "text": "Station History",
+          "link": "/reference/api/station/station-history"
+        },
+        {
+          "text": "Create Station",
+          "link": "/reference/api/station/create-station"
+        },
+        {
+          "text": "Modify Station",
+          "link": "/reference/api/station/modify-station"
+        }
+      ]
+    },
+    {
+      "text": "OpenAPI — Enumerations",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Enumerations Overview",
+          "link": "/reference/api/enumerations/"
+        },
+        {
+          "text": "Inverter",
+          "link": "/reference/api/enumerations/inverter"
+        },
+        {
+          "text": "Logger",
+          "link": "/reference/api/enumerations/logger"
+        },
+        {
+          "text": "Alarm Code",
+          "link": "/reference/api/enumerations/alarm-code"
+        },
+        {
+          "text": "Device Type",
+          "link": "/reference/api/enumerations/device-type"
+        },
+        {
+          "text": "Timezone",
+          "link": "/reference/api/enumerations/timezone"
         }
       ]
     }
@@ -64,12 +210,12 @@ const sidebar = {
 
 export default withMermaid({
   lang: 'en-US',
-  title: 'DevDocs Portal',
-  description: 'Developer documentation portal built with VitePress',
+  title: 'Sofar Cloud',
+  description: 'SOFARCloud OPEN API 2.0 developer documentation',
   cleanUrls: true,
   ignoreDeadLinks: false,
   themeConfig: {
-    siteTitle: 'DevDocs Portal',
+    siteTitle: 'Sofar Cloud',
     search: {
       provider: 'local',
       options: {
